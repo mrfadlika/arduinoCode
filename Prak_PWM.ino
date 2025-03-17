@@ -1,18 +1,14 @@
-byte brightness, i;
 void setup() {
   // put your setup code here, to run once:
-  pinMode(3, OUTPUT);
-
+  analogWrite(3, 25);
+  analogWrite(5, 50);
+  analogWrite(6, 75);
+  analogWrite(9, 100);
+  analogWrite(10, 125);
+  analogWrite(11, 150);
 }
 
 void loop() {
   // put your main code here, to run repeatedly:
-
-  brightness = 0;
-  for(i = 0; i < 20; i++) {
-    brightness++;
-    analogWrite(3, brightness);
-    delay(400);
-  }
 
 }
